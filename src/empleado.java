@@ -1,15 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
+public class empleado {
+    private String nombre;
+    private int edad;
+    private double salario;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    //metodo constructor
+    public empleado(String nombre, int edad, double salario) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.salario = salario;
+    }
+
+    //Setter para las variables
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+    //Getter para las variables
+    public String getNombre() {
+        return nombre;
+    }
+    public int getEdad() {
+        return edad;
+    }
+    public double getSalario() {
+        return salario;
     }
 }
